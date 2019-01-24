@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>EachLoops spades</title>
+    <title>Pig Latin</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script
@@ -12,19 +12,20 @@
   </head>
   <body>
     <div class="container">
-      <h1>Leap year detector</h1>
-
-      <form id="leap-year">
+      <div class="jumbotron">
+        <h3 class="center">igPay atinLay</h3>
+      </div>
+      <form id="piggy" class="center">
         <div class="form-group">
-          <label for="year">Enter a year and find out if it's a leap year:</label>
-          <input id="year" type="text">
+          <label for="year">Enter plain english to translate</label>
+          <input type="text" required>
         </div>
 
-        <button type="submit" class="btn">Find out!</button>
+        <button type="submit" class="btn bg-info">Find out!</button>
       </form>
-
-      <div id="result">
-        <p><span class="year"></span> is <span class="not"></span> a leap year.</p>
+      <br><br><br>
+      <div id="result" class="center">
+        <p style="font-size: 24px;">The translation from english is <span class="translate"></span></p>
       </div>
     </div>
   </body>
